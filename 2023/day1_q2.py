@@ -1,5 +1,5 @@
 sum = 0
-with open('day1_input.txt', 'r') as file:
+with open('./day1_input.txt', 'r') as file:
     lines = file.readlines()
 for line in lines:
     singleLine = line.strip()

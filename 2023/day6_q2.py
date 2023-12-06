@@ -9,12 +9,11 @@ df['Time'] = df['Time'].str.replace(' ', '')
 df['Distance'] = df['Distance'].str.replace(' ', '')
 
 
-
-startWays = 0
+start = 0
 last = int(df['Time'][1])
 for initial in range(int(df['Time'][1])):
     if (int(df['Time'][1]) - initial)*initial > int(df['Distance'][1]):
-        StartWays=initial
+        start = initial
         break
 
-print((last-initial)-initial + 1)
+print((last-start)-start + 1)
